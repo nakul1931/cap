@@ -21,7 +21,7 @@ for x in range(0, file_count):
         pdfFileObj = open(files[x], 'rb')
         pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
         num_pages = pdfReader.numPages
-        print("This PDF file is" + files[x])
+        print("This PDF file is " + files[x])
         for i in range(0, num_pages):
             PageObj = pdfReader.getPage(i)
             print("this is page " + str(i + 1))
